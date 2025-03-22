@@ -1,0 +1,340 @@
+/* body, .App {
+  font-family: 'Arial', sans-serif;
+  background-color: #081b29;  
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  width: 100vw;
+  overflow: hidden;
+  text-align: center;
+}
+
+.App {
+  padding: 30px;
+
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.4); 
+  flex-direction: column;
+  box-sizing: border-box;
+}
+ */
+
+ /* body, .App {
+  font-family: 'Arial', sans-serif;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%vh;
+  width: 100vw;
+  overflow: hidden;
+  text-align: center;
+}
+
+
+.App {
+  position: relative; 
+  background-color: rgba(0,0,0, 0.85); 
+  padding: 30px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  flex-direction: column;
+  
+  transform: translateY(-50px); 
+}
+
+.App::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  background-image: url('./image\ copy.png');
+  background-size: cover;
+  opacity: 0.5;
+  z-index: -1; 
+} */
+
+/* html, body {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #081b29;
+  overflow: hidden;
+}
+
+.App {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.85);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  padding: 30px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.App::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-image: url('./image copy.png');
+  background-size: cover;
+  background-position: center;
+  opacity: 0.5;
+  z-index: -1;
+} */
+body, .App {
+  font-family: 'Arial', sans-serif;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  width: 100vw;
+  overflow: hidden;
+  text-align: center;
+}
+
+/* .App {
+  background-image: url('./mental\ frontend\ img.webp');
+  background-size: cover;
+  padding: 30px;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  flex-direction: column;
+  box-sizing: border-box;
+  transform: translateY(-50px); 
+  background-color: rgba(8, 27, 41, 0.85);
+} */
+.App {
+  position: relative; /* Ensure positioning context for the pseudo-element */
+  background-color: rgba(0,0,0, 0.85); 
+  padding: 30px;
+    /* border-radius: 8px; */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  flex-direction: column;
+  
+  /* box-sizing: border-box; */
+  transform: translateY(-50px); /* Move the whole container up */
+}
+
+.App::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  background-image: url('./image\ copy.png');
+  background-size: cover;
+  opacity: 0.5;
+  z-index: -1; /* Ensure the pseudo-element is behind the content */
+  /* border-radius: 8px;  */
+}
+
+.above-app {
+  background-color: #090c34;
+}
+
+h1 {
+  color: #ededed;
+  margin-bottom: 20px; 
+  font-size: var(--font-size);
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); 
+}
+
+label {
+  display: block;
+  margin-bottom: 8px;
+  color: #ededed;
+  font-size: var(--font-size);
+  text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.4); /* Add text shadow for depth */
+}
+
+ textarea, button {
+  width: 80%; /* Increase width to 80% */
+  max-width: 1200px; /* Increase max-width as needed */
+  padding: 12px;
+  margin-bottom: 20px;
+  border: 1px solid #000;
+  border-radius: 10px;
+  box-sizing: border-box;
+  font-size: var(--font-size);
+  transition: transform 0.2s, box-shadow 0.2s; /* Add transition effects */
+}
+
+
+/* Enhanced select dropdown */
+select {
+  width: 80%;
+  max-width: 1200px;
+  padding: 12px;
+  margin-bottom: 20px;
+  border: 1px solid #00abf0;
+  border-radius: 10px;
+  box-sizing: border-box;
+  font-size: var(--font-size);
+  background-color: #d2edf95e;
+  color: #081b29;
+  cursor: pointer;
+  appearance: none; /* Remove default arrow */
+  background-image: url('data:image/svg+xml;charset=UTF-8,<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="%23081b29" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-chevron-down"><polyline points="6 9 12 15 18 9"></polyline></svg>'); /* Custom arrow */
+  background-repeat: no-repeat;
+  background-position: right 10px top 50%;
+  background-size: 16px 16px;
+  transition: transform 0.2s, box-shadow 0.2s; /* Add transition effects */
+}
+
+select:hover {
+  transform: scale(1.05); /* Slightly enlarge on hover */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Add shadow on hover */
+}
+
+select:focus {
+  border-color: #00abf0; /* Change border color on focus */
+  box-shadow: 0 4px 12px rgba(0, 171, 240, 0.5); /* Add shadow on focus */
+  transform: scale(1.02); /* Slightly enlarge on focus */
+}
+
+/* select {
+  background-color: #d2edf958;
+  color:#000; 
+}
+
+select:hover {
+  transform: scale(1.05); 
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); 
+} */
+
+textarea {
+  height: 150px;
+  resize: none;
+  background-color: #fffefee5;
+  color: #081b29;
+  font-family: 'Courier New', monospace;
+  transition: all 0.3s ease-in-out; /* Smooth transition for all properties */
+}
+
+textarea:focus {
+  border-color: #00abf0; /* Change border color on focus */
+  box-shadow: 0 4px 12px rgba(0, 171, 240, 0.5); /* Add shadow on focus */
+  transform: scale(1.02); /* Slightly enlarge on focus */
+}
+
+button {
+  background-color: #d2edf958;
+  color: #081b29;
+  border: none;
+  cursor: pointer;
+  transition: background-color 0.3s, transform 0.3s; /* Add transition for background color and transform */
+}
+
+button:hover {
+  background-color: #00abf0;
+  color: #ffffff; /* Change text color on hover */
+  transform: translateY(-2px); /* Slightly lift button on hover */
+}
+
+div.prediction {
+  margin-top: 20px;
+  background: #d5f1f94f;
+  padding: 45px;
+  border-radius: 10px;
+  text-align: left;
+  width: 80%; /* Increase width to 80% */
+  max-width: 1000px; /* Increase max-width as needed */
+  box-sizing: border-box;
+  font-size: var(--font-size);
+  overflow-y: auto; /* Add overflow-y to make it scrollable if content overflows */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Add shadow to prediction box */
+  transition: transform 0.2s, box-shadow 0.2s; /* Add transition effects */
+}
+
+div.prediction:hover {
+  transform: scale(1.01); /* Slightly enlarge on hover */
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3); /* Enhance shadow on hover */
+}
+
+div.prediction h3 {
+  margin: 0 0 10px 0;
+}
+
+div.prediction p {
+  margin: 0;
+}
+
+/* Media queries to adjust font size based on screen size */
+@media (max-width: 1200px) {
+  div.prediction {
+    font-size: 16px; /* Adjust font size for smaller screens */
+  }
+}
+
+@media (max-width: 768px) {
+  div.prediction {
+    font-size: 14px; /* Further adjust font size for smaller screens */
+  }
+}
+
+@media (max-width: 480px) {
+  div.prediction {
+    font-size: 12px; /* Further adjust font size for smallest screens */
+    color: #ededed;
+  }
+}
+
+/* Classes for different sizes */
+.small-text {
+  --font-size: 30px;
+  font-family: 'Courier New', monospace;
+  color: #00abf0;
+  font-weight: bold;
+}
+
+.large-text {
+  --font-size: 50px;
+}
+
+.small-input {
+  --input-width: 60%;
+  --input-max-width: 600px;
+  background-color: rgb(56, 61, 83);
+  color: #ededed
+}
+
+.large-input {
+  --input-width: 90%;
+  --input-max-width: 1200px;
+}
+
+.small-button {
+  --button-width: 60%;
+  --button-max-width: 700px;
+}
+
+.large-button {
+  --button-width: 90%;
+  --button-max-width: 800px;
+}
