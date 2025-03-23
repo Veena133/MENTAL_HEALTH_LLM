@@ -30,7 +30,7 @@ Mental health is crucial, and early detection of depressive symptoms can lead to
 - Database: MongoDB  
 - Deployment: Hugging Face, AWS/GCP  
 
----
+
 
  📂 Project Structure
  📁 Mental-Health-LLM
